@@ -1,0 +1,6 @@
+{
+  "api": {
+    "localUrl": "http://localhost:8080",
+    "prodUrl": "http://ec2-3-86-181-183.compute-1.amazonaws.com:8080"
+  }
+}
