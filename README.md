@@ -1,6 +1,62 @@
 # myhome-ui
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+This project is React Application for showing information about Home appliance. it will  help to manage  household appliances so that I could properly document and
+maintain them
+
+
+## Built With
+
+* 	[Npm](https://maven.apache.org/) - Dependency Management
+* 	[React](https://reactjs.org/)- A JavaScript library for building user interfaces
+ *	[BootStrap](https://getbootstrap.com/) - Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
+ *	[CSS](https://spring.io/projects/spring-boot) - Framework to ease the bootstrapping and development of new Spring Applications
+* 	[Git](https://git-scm.com/) - Free and Open-Source distributed version control system 
+
+
+## To-Do
+
+- [ ] Axios 
+- [ ] Added testcase for ui component
+- [ ] Bootstrap - CSS
+- [ ]  improve ui 
+- [ ] Content Negotiation
+- [ ] Material Design for Bootstrap
+- [ ] Error handling
+
+
+## Running the application locally
+
+There are several ways to run a React on your local machine. 
+- Download the zip or clone the Git repository.
+- Unzip the zip file (if you downloaded one)
+- Open Command Prompt and Change directory (cd) to folder containing package.json
+- install node
+- execute below command
+```shell
+npm install 
+npm run start
+
+
+```
+### Git Repo
+Git location for UI : https://github.com/rampuriaankur/myhome-ui
+
+
+## Deployment 
+Two cloud portal used to host api and ui component.
+* [Microsoft Azure](https://azure.microsoft.com/) - To deploy appliances-inventory api.
+* [Heroku](https://www.heroku.com/) - To host home-appliance ui.
+
+
+ 
+## Resources
+
+
+## References
+
+
 ## Available Scripts
 
 In the project directory, you can run:
