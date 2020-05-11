@@ -1,12 +1,10 @@
-import { Link } from "react-router-dom";
-
 import React from "react";
 
 function SearchFilter(props) {
   return (
     <div className="s003">
       <form onSubmit={props.onFilterSubmit}>
-        <section className="section center ">
+        <section className="section center " id="multiCollapseExample1">
           <div className="row">
             <div className="col-sm-4 input">
               <input
@@ -68,11 +66,6 @@ function SearchFilter(props) {
             </div>
             <div className="col-sm-2">
               <button className="btn  btn-success">search</button>
-            </div>
-            <div className="col-sm-2">
-              <Link to="/manageProduct" className="btn btn-primary">
-                <span className=""> Add new Product </span>
-              </Link>
             </div>
           </div>
         </section>

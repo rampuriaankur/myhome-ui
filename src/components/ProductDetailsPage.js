@@ -3,6 +3,9 @@ import ProductList from "./ProductList";
 import { getProduct, getProductWithFilter } from "../api/productApi";
 import * as productApi from "../api/productApi";
 import SearchFilter from "./SearchFilter";
+import { Link } from "react-router-dom";
+import { Button, Collapse } from "react-bootstrap";
+
 function ProductDetialsPage(props) {
   function deleteCourseByid(productId) {
     productApi
@@ -36,37 +39,44 @@ function ProductDetialsPage(props) {
     event.preventDefault();
     getProductWithFilter(searchFilter).then((product) => setProduct(product));
   }
+  const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <div
-        className="jumbotron jumbotron-fluid"
-        style={{ backgroundColor: "#5bc0de " }}
-      >
-        <span className=" text-center h2">
-          {" "}
-          <strong> Our Home Appliances </strong>
-        </span>
+    <div className="container fixed">
+      <div className="header">
+        <strong> Our Home Appliances </strong>
       </div>
-      <div className="container">
-        <div>
-          <SearchFilter
-            searchFilter={searchFilter}
-            onChange={onChange}
-            onFilterSubmit={onFilterSubmit}
-          />
-        </div>
 
-        <div className="dataTables_wrapper dt-bootstrap">
-          <div>
-            <ProductList
-              product={product}
-              deleteCourseByid={deleteCourseByid}
+      <div className="search-bar ">
+        <p>
+          <Button
+            className=""
+            onClick={() => setOpen(!open)}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+          >
+            Search Filter
+          </Button>{" "}
+          <Link to="/manageProduct" className="btn btn-primary">
+            <span className=""> Add new Product </span>
+          </Link>
+        </p>
+        <Collapse in={open}>
+          <div id="example-collapse-text">
+            <SearchFilter
+              searchFilter={searchFilter}
+              onChange={onChange}
+              onFilterSubmit={onFilterSubmit}
             />
           </div>
+        </Collapse>
+      </div>
+      <div className="dataTables_wrapper dt-bootstrap">
+        <div>
+          <ProductList product={product} deleteCourseByid={deleteCourseByid} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
