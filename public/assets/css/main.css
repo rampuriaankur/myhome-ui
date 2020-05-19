@@ -97,6 +97,6 @@ html {
   font-weight: bold;
   text-align: center;
   color: aliceblue;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 15px;
+  /* margin-bottom: 40px; */
 }
