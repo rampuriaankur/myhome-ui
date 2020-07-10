@@ -5,6 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project is React Application for showing information about Home appliance. it will  help to manage  household appliances so that I could properly document and
 maintain them
 
+# URLS
+
+* FrontEnd : UI is hosted on [Azure](https://home-appliance-app.azurewebsites.net/appliances)
+* APIs :   APIs are deployed on [Heroku](https://home-appliance.herokuapp.com/product)
 
 ## Built With
 
